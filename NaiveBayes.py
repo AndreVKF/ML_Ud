@@ -21,7 +21,7 @@ from sklearn.compose import ColumnTransformer
 '''
     Base de Credito Naive Bayes
 '''
-base = pd.read_csv('C:\\\Users\\André Viniciu\\Documents\\Python_ML\\Curso\\Secao 4 - Aprendizagem bayesiana\\risco_credito.csv')
+base = pd.read_csv('C:\\Users\\André Viniciu\\Documents\\Python_ML\\Curso\\Secao 4 - Aprendizagem bayesiana\\risco_credito.csv')
 previsores = base.iloc[:, 0:4].values
 classe = base.iloc[:, 4].values
 
