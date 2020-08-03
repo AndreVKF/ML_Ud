@@ -1,0 +1,16 @@
+# PCA (Principal Component Analysis)
+
+# Seleção de características x Extração de características
+# Identifica a correlação entre variáveis, e caso haja uma forte correlação é possível reduzir a dimensionalidade
+# Das m variáveis independentes, PCA extrai p<=m novas variáveis independentes que explica melhor a variação na base de dados
+
+# LDA (Linear Discriminant Analysis)
+
+# Além de encontras os componentes principais, LDA também encontra os eixos que maximizam a separação entre múltiplas classes
+# É supervisionado por causa da relação com a classe
+# Das m variáveis independentes, LDA extrai p<=m novas variáveis independentes q mais separam as classes da variável independente
+
+# Kernel PCA
+
+# PCA e LDA são utilizados quando os dados são linearmente separáveis
+# Kernel PCA é uma versão do PCA q os dados são mapeados para uma dimensão maior usaond o kernel trick
