@@ -38,9 +38,9 @@ previsores = scaler.fit_transform(previsores)
 previsores_treinamento, previsores_teste, classe_treinamento, classe_teste = train_test_split(previsores, classe, test_size=0.15, random_state=0)
 
 # LDA
-lda = LinearDiscriminantAnalysis(n_components=6)
+lda = LinearDiscriminantAnalysis(n_components=2)
 
-previsores_treinamento = lda.fit_transform(previsores_treinamento)
+previsores_treinamento = lda.fit_transform(previsores_treinamento, classe_treinamento)
 previsores_teste = lda.fit(previsores_teste)
 
 # Random Forest
